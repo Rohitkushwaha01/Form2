@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Responsive Form</h1>
+
+    <div class="container">
+        <form action="mailto:therohitkushwaha07@gmail.com" method="post" enctype="text/plain">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Phone number:</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="fname" name="firstname" placeholder="Enter your Phone number">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country:</label>
+                </div>
+                <div class="col-75">
+                    <select name="Country" id="Country">
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Comments">Comments</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="Comments" id="Comments" placeholder="Write something..." style="height: 200px;"></textarea>
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="row">
+                <input type="submit"  id="submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

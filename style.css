@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    text-shadow: 0px 1px 0px red, 0 0 0.1em blue;
+    border:none;
+    padding: 10px;
+    background-color: rgb(253, 250, 149);
+}
+input[type=text], select, textarea{
+    border: 2px solid #ccc;
+    border-radius: 4px;   
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 7px;
+}
+input[type=number]{
+    border: 2px solid #ccc;
+    border-radius: 4px;   
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 7px;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit]{
+    background-color: rgb(255, 180, 19);
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 12px 20px;
+    float: right;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgb(250, 195, 111);
+}
+
+.container{
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin: 30px 90px;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+}
